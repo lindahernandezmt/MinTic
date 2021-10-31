@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="functionClient.js"></script>
+    <title>Hoteleria</title>
+    <link rel="icon" href="iconos/hotel.png">
+    <link rel="stylesheet" href="css_home/menu.css">
+    <link rel="stylesheet" href="css_home/slider.css">
+    <link rel="stylesheet" href="css_home/contenido.css">
+    <link rel="stylesheet" href="css_home/footer.css">
+
+
+    <style>
+        body {
+            background-color: rgb(83, 80, 80);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="iconHoteleria">
+        <img style="height: 170px" width="150px" src="iconos/hotel.png" alt="">
+    </header>
+
+    <header class="main_header">
+
+        <input type="checkbox" id="boton_menu">
+
+        <label class="icono_menu" for="boton_menu">
+            <img src="iconos/iconomenu.png" alt="iconomenu" width="40px" height="35px">
+        </label>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html"><b>INICIO</b> </a></li>
+                <li><a href="../room/room.html">ROOM</a></li>
+                <li><a href="../client/client.html">CLIENT</a></li>
+                <li><a href="../Reservas/Reservt.html">RESERVATION</a></li>
+                <li><a href="../category/category.html">CATEGORY</a></li>
+                <li><a href="../message/message.html">MESSAGE</a></li>
+                <li><a href="../admin/admin.html">ADMIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="biografía" class="Bloquetitulo">
+        <h1>Clientes</h1>
+        <section class="parrafotitulo">
+            <fieldset style="width: 30%">
+                <legend>Datos del Usuario</legend>
+                <table>
+                    
+        
+                    <tr>
+                        <th>NAME:</th>
+                        <td><input type="text" id="name"> </td>
+                    </tr>
+                    <tr>
+                        <th>EMAIL:</th>
+                        <td><input type="email" id="email"> </td>
+                    </tr>
+                    <tr>
+                        <th>PASSWORD:</th>
+                        <td><input type="password" id="password"> </td>
+                    </tr>
+                    <tr>
+                        <th>AGE:</th>
+                        <td><input type="number" id="age"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="traerInformacion()"> Consultar </button>
+                            <button onclick="guardarInformacion()">Guardar</button>
+                            <button onclick="editarInformacion()">Actualizar</button>
+                            <tr>
+                                <th>ID PARA Actualizar:</th>
+                                <td><input type="id" id="idClient" > </td>
+                            </tr> 
+                        </td>
+                    </tr>
+        
+                </table>
+                <div id="resultado"></div>
+            </fieldset>
+
+            <div class="iconoclemmons">
+                <img style="height: 80px; width: 75px;" src="iconos/recepcion.png" alt="">
+            </div>
+        </section>
+    </article>
+
+
+    <footer>
+        <section class="partefooter">
+            <h3 class="titulomapa">Tambien puedes ubicarnos y contactarnos</h3>
+        <div class="contenido">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.752416395641!2d-74.08623508573687!3d4.638199143489027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bd14943c13b%3A0x3de530667d9ff6b0!2sUniversidad%20Nacional%20de%20Colombia!5e0!3m2!1ses!2sco!4v1614105638809!5m2!1ses!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <form action="">
+            <h3><br> CONTACTENOS</h3>
+            <input type="text" name="nombre" placeholder="nombre" maxlength="35">
+            <input type="email" name="correo" placeholder="email">
+            <input type="tel" name="telefono" placeholder="telefono">
+            <textarea name="mensaje" id="textarea" placeholder="escriba un mensaje"></textarea>
+            <label for="textarea"></label>
+            <input type="submit" id="boton" value="Enviar">
+        </form>
+         </div>
+
+         <div class="iconosredes">
+             <div class="ajusteiconos">
+                 <a href="https://es-la.facebook.com/Hoteldeturismoversalles/" target="_blank"> <img src="iconos/Facebook.png" alt="iconofacebook"></a>
+                 <a href="https://www.youtube.com/watch?v=QU0fHNKmvqg&ab_channel=MiVidaViajera" target="_blank"> <img src="iconos/Youtube.png" alt="iconoyoutube"></a>
+                 <a href="https://www.instagram.com/abhotelesyturismo/?hl=es-la" target="_blank"> <img src="iconos/instagram.png" alt="iconoinstagram"></a>
+             </div>
+         </div>
+        </section>
+        <div class="textofooter">
+<p>
+    © Copyright 2021 Hoteleria
+</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+.footer{
+    width: 100%;
+    background-color: rgb(83, 80, 80);
+}
+
+.partefooter{
+    background-image: url(../imagenes/fondogris.jpg);
+    background-attachment: fixed;
+    padding: 0px;
+    width: 100%;
+}
+
+.contenido{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.titulomapa{
+    color: rgb(255, 145, 0);
+    text-align: center;
+    font-family: Ink Free;
+    padding: 35px 0 15px 0;
+    font-size: 30px;
+}
+
+iframe{
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+form{
+    margin-left: 120px;
+    width: 450px; 
+    background-color: rgb(83, 80, 80);
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: Ink Free;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 5px;
+    font-family: Ink Free;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#boton{
+    background: rgb(255, 145, 0);
+    color: rgb(83, 80, 80);
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+    background: withe;
+    color: rgb(255, 145, 0);
+
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+
+.iconosredes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconosredes img, a{
+text-decoration: none;
+margin: 50px 12px;
+height: 50px;
+}
+
+.textofooter{
+    padding-top: 10px;
+    width: 100%;
+    font-family: Ink Free;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    height: 80px;
+}
